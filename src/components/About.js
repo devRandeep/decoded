@@ -6,10 +6,10 @@ import whoWeAreImage from "../images/whoweare.png";
 export default function About() {
   const OurPartnersLogo = [
     {
-      imageURL: "../assets/images/ourpartners1.png",
+      imageURL: "/assets/images/ourpartners1.png",
     },
   ];
-
+  
   return (
     <>
       {/* Breadcrumb */}
@@ -26,7 +26,14 @@ export default function About() {
               <div className="aboutContent">
                 <h3>Who We Are</h3>
                 <p>
-                  {/* Your content */}
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
                 </p>
               </div>
             </Col>
@@ -40,11 +47,11 @@ export default function About() {
             <div className="ourPartnersContent">
               <h3 className="text-center">Our Partners</h3>
             </div>
-            {OurPartnersLogo.map((partnerLogo, index) => (
-              <Col md={3} key={index}>
+              {OurPartnersLogo.map((partnerLogo) => (
+              <Col md={3}>
                 <img src={partnerLogo.imageURL} alt="" />
               </Col>
-            ))}
+              ))}
           </Row>
         </Container>
       </section>
