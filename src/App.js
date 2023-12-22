@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import React from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./sass/main.css";
+import Head from "./components/Head";
+import Home from "./components/Home";
+import About from "./components/About";
+import Course from "./components/Course";
+import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
+import Footer from "./components/Footer";
+import Error from "./components/Error";
+<script
+  src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin
+></script>;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Head />     
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/course" component={Course} />
+        <Route component={Error} />
+      </Switch>
+    
+      <Footer />
     </div>
   );
 }
