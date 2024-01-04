@@ -54,6 +54,11 @@ ul {
   margin: 0px;
 }
 
+li {
+  list-style: none;
+  margin: 0px;
+}
+
 html a {
   text-decoration: none;
 }
@@ -94,7 +99,7 @@ header {
   opacity: 0;
   transition: 0.3s ease-in-out;
   visibility: hidden;
-  z-index: 55;
+  z-index: 555;
 }
 
 .subMenuMainWrap ul {
@@ -196,7 +201,32 @@ header {
   height: 70vh;
   display: flex;
   align-items: center;
-  background: #ddd;
+  background: url(../components/images/homebanner.jpg) no-repeat right/cover;
+  position: relative;
+}
+.bannerFrame .row {
+  z-index: 2;
+}
+.bannerFrame:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.82) 7.99%, rgba(0, 0, 0, 0) 64.14%);
+  z-index: 1;
+}
+
+.bannerText {
+  position: relative;
+  z-index: 111;
+}
+.bannerText h1 {
+  color: #fff;
+}
+.bannerText p {
+  color: #fff;
 }
 
 .homeAbout {
@@ -390,8 +420,6 @@ footer .bottomFooter a {
   height: 277px;
   text-align: center;
   justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
 }
 .breadCrumb:after {
@@ -418,4 +446,121 @@ footer .bottomFooter a {
 
 .ourPartners {
   background: #F4F4F4;
+}
+
+.partnerslogoImageBox {
+  width: 100%;
+  height: 100%;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.accordion {
+  padding-top: 40px;
+}
+
+.accordion h2 button {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.accordion-body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.accordion-button:not(.collapsed) {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border: none;
+}
+
+.accordion .accordion-item {
+  border-left: none;
+  border-right: none;
+}
+
+.accordion-button:focus {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border: none;
+}
+
+.courseCategories {
+  background: #252525;
+  padding: 25px 0px;
+}
+.courseCategories p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+}
+
+.error {
+  background: url(../components/images/student.jpg) no-repeat center/cover;
+  position: relative;
+  color: #fff;
+  height: 50vh;
+}
+.error:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+.error .row {
+  z-index: 2;
+}
+
+.locationBox {
+  margin-top: 27px;
+}
+.locationBox h6 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.locationBox p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.locationBox li {
+  margin-top: 12px;
+}
+.locationBox svg {
+  margin-right: 16px;
+}
+
+.contactForm > div {
+  width: 100%;
+  margin-top: 26px;
+}
+.contactForm input {
+  border-radius: 6px;
+  border: 1px solid var(--grey, #CCC);
+  background: #FCFCFC;
+  width: 100%;
+}
+.contactForm label {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
 }/*# sourceMappingURL=main.css.map */

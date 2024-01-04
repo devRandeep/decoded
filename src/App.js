@@ -10,6 +10,7 @@ import Course from "./components/Course";
 import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
+import Contact from "./components/Contact";
 <script
   src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
   crossorigin
@@ -24,9 +25,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/course" component={Course} />
+        <Route exact path="/contactus" component={Contact} />
         <Route component={Error} />
-      </Switch>
-    
+      </Switch>    
       <Footer />
     </div>
   );

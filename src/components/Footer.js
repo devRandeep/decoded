@@ -1,8 +1,7 @@
 import React from "react";
 import { Col, Container, NavLink, Row } from "react-bootstrap";
-import logo from "../images/logo.svg";
+import logo from "../logo2.png";
 import { BrowserRouter, Link } from "react-router-dom/cjs/react-router-dom.min";
-
 
 export default function Footer() {
   return (
@@ -19,16 +18,14 @@ export default function Footer() {
                   <strong>Quick Links</strong>
                 </p>
 
-                <BrowserRouter>
-                  <ul className="footerLinks">
-                    <li>
-                      <Link to="/about">About Us</Link>
-                    </li>
-                    <li>
-                      <Link to="/course">Courses</Link>
-                    </li>
-                  </ul>
-                </BrowserRouter>
+                <ul className="footerLinks">
+                  <li>
+                    <Link to="/about">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/course">Courses</Link>
+                  </li>
+                </ul>
               </div>
             </Col>
             <Col md={3}>
@@ -134,7 +131,7 @@ export default function Footer() {
               </BrowserRouter>
             </Col>
             <Col md={2}>
-                <p>SITE BY STAXO</p>
+              <p>SITE BY STAXO</p>
             </Col>
           </Row>
         </Container>
@@ -142,4 +139,3 @@ export default function Footer() {
     </>
   );
 }
-

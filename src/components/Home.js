@@ -1,16 +1,16 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import AboutGirl from "../images/aboutgirl.png";
+import AboutGirl from "./images/aboutgirl.png";
 import Counter from "./Counter";
-import MakesDiffrenceImage from "../images/makesdifference.png";
+import MakesDiffrenceImage from "./images/makesdifference.png";
 import Testimonial from "./Testimonial";
 import Newsletter from "./Newsletter";
-
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Home() {
   const spectrumItem = [
     {
-      boxImg: "././assets/images/spectrum1.png",
+      src: "./arrayImages/spectrum1.png",
       boxText: "Immersions (Literacy)",
       lineColor: "#FEF800",
       boxDes: "Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do",
@@ -20,7 +20,7 @@ export default function Home() {
     },
 
     {
-      boxImg: "././assets/images/spectrum1.png",
+      src: "./arrayImages/spectrum1.png",
       boxText: "Workshops (Fluency)",
       lineColor: "#2ECC71",
       boxDes: "Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do",
@@ -30,7 +30,7 @@ export default function Home() {
     },
 
     {
-      boxImg: "././assets/images/spectrum1.png",
+      src: "./arrayImages/spectrum1.png",
       boxText: "Academies / Apprenticeships (Mastery)",
       lineColor: "#2ECC71",
       boxDes: "Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do",
@@ -39,7 +39,7 @@ export default function Home() {
       courseBenefitThree: "10-30 learners",
     },
     {
-      boxImg: "././assets/images/spectrum1.png",
+      src: "./arrayImages/spectrum1.png",
       boxText: "Academies / Apprenticeships (Mastery)",
       lineColor: "#2ECC71",
       boxDes: "Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do",
@@ -60,9 +60,9 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <a href="" className="btnSite">
+              <Link to="/course" className="btnSite">
                 View Courses
-              </a>
+              </Link>
             </Col>
           </Row>
         </Container>
@@ -102,19 +102,18 @@ export default function Home() {
               <h2>Digital Proficency Spectrum</h2>
             </Col>
             <Col md={4} className="text-end">
-              <a href="" className="btnSite">
+              <Link to="/course" className="btnSite">
                 View All
-              </a>
+              </Link>
             </Col>
           </Row>
           {/* Section Title Closed */}
-
           <Row>
             {spectrumItem.slice(0, 3).map((specItem) => (
               <Col md={4}>
                 <div className="digitalProficencyBox">
                   <div className="spectrumImage">
-                    <img src={specItem.boxImg} alt="" />
+                    <img src={specItem.src} />
                     <div
                       className="colorLine"
                       style={{ backgroundColor: "#FEF800" }}
@@ -370,10 +369,9 @@ export default function Home() {
         </Container>
       </section>
 
-              <Testimonial />
+      <Testimonial />
 
-              <Newsletter />
-
+      <Newsletter />
     </>
   );
 }

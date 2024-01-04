@@ -29,7 +29,7 @@ export default function Testimonial() {
         <Container>
           <Row>
             <Col md={12} className="mx-auto">
-              <Swiper navigation={true}>
+              <Swiper navigation={true} pagination={{clickable:true}}>
                 {TestimonialSlide.map((testFiled) => (
                   <SwiperSlide>
                   <p>{testFiled.testimonialDesc}</p>
