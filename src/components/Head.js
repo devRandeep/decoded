@@ -6,6 +6,8 @@ import { Col, Dropdown, Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import { BrowserRouter, Link, NavLink, Router } from "react-router-dom";
 import arrowKey from "./images/keyboard_arrow_down.png";
+import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlined';
+
 
 export default function Header() {
   return (
@@ -23,7 +25,7 @@ export default function Header() {
             <Col md={10}>
               <ul className="appMenuList">
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/about" exact activeClassName="menuActive">About</Link>
                 </li>
                 <li>
                   <Link
@@ -192,10 +194,11 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link exact activeClassName="menuActive" to="/careers">
+                  <Link exact activeClassName="menuActive" to="/career">
                     Careers
                   </Link>
                 </li>
+            
                 <li>
                   <Link
                     exact
@@ -203,7 +206,7 @@ export default function Header() {
                     className="btnSite"
                     to="/contactus"
                   >
-                    contact
+                    Cart <ShoppingBasketOutlinedIcon /> 
                   </Link>
                 </li>
               </ul>

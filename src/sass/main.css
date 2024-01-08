@@ -63,6 +63,11 @@ html a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  box-shadow: none;
+}
+
 .btnSite {
   border-radius: 18px;
   background: var(--primary, #fef800);
@@ -557,10 +562,34 @@ footer .bottomFooter a {
   background: #FCFCFC;
   width: 100%;
 }
+.contactForm select {
+  border-radius: 6px;
+  border: 1px solid var(--grey, #CCC);
+  background: #FCFCFC;
+  width: 100%;
+  margin-top: 25px;
+  padding: 16px 14px;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+}
 .contactForm label {
   color: #000;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
+  align-items: start;
+}
+
+.courseBox {
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.bookimg img {
+  width: 200px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

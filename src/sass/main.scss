@@ -71,6 +71,10 @@ li {
 html a {
     text-decoration: none;
 }
+button{
+    border: none;
+    box-shadow: none;
+}
 
 .btnSite {
     border-radius: 18px;
@@ -653,14 +657,38 @@ footer {
         width: 100%;
     }
 
+    select{
+        border-radius: 6px;
+        border: 1px solid var(--grey, #CCC);
+        background: #FCFCFC;
+        width: 100%;
+        margin-top: 25px;
+        padding: 16px 14px;
+        appearance: auto;
+    }
+
     label {
         color: #000;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         font-family: $globalFonts;
-
-
+        align-items: start;
+        
     }
 
 }
+.courseBox{
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.bookimg
+{
+    img{
+        width: 200px;
+        margin-bottom: 10px;
+        
+    }
+} 

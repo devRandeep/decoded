@@ -11,6 +11,9 @@ import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
+import Career from "./components/Career";
+import StudentsDetails from "./components/StudentsDetails";
+import HomeContainer from './container/HomeContainer';
 <script
   src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
   crossorigin
@@ -20,12 +23,15 @@ function App() {
   return (
     <div className="App">
       
-      <Head />     
-      <Switch>
+      <Head />    
+     
+      <Switch>     
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/course" component={Course} />
         <Route exact path="/contactus" component={Contact} />
+        <Route exact path="/career" component={Career} />
+        <Route exact path="/studentdetails" component={StudentsDetails} />
         <Route component={Error} />
       </Switch>    
       <Footer />

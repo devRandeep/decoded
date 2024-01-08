@@ -6,6 +6,7 @@ import MakesDiffrenceImage from "./images/makesdifference.png";
 import Testimonial from "./Testimonial";
 import Newsletter from "./Newsletter";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import HomeContainer from '../container/HomeContainer';
 
 export default function Home() {
   const spectrumItem = [
@@ -60,13 +61,16 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <Link to="/course" className="btnSite">
+              <Link to="/course" className="btnSite"> 
                 View Courses
               </Link>
             </Col>
           </Row>
         </Container>
       </section>
+
+        <HomeContainer /> 
+        
 
       <section className="homeAbout">
         <Container>
