@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row, Table } from 'react-bootstrap'
 
-export default function StudentsDetails() {
+function StudentsDetails(props) {
   return (
     <section className="Username p80">
     <Container>
@@ -19,4 +19,6 @@ export default function StudentsDetails() {
   </section>
   )
 }
+
+export default StudentsDetails
 

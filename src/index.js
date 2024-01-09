@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
+// import { legacy_createStore as createStore } from 'redux';
+// import { Provider } from 'react-redux';
+// import rootReducer from './services/Reducers/index'
+// const store=createStore(rootReducer)
+// console.warn("store data", store)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

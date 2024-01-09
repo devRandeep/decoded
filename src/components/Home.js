@@ -69,7 +69,7 @@ export default function Home() {
         </Container>
       </section>
 
-        <HomeContainer /> 
+     
         
 
       <section className="homeAbout">

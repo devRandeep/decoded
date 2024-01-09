@@ -1,3 +1,13 @@
-import StudentsDetails from "../components/StudentsDetails";
+import StudentsDetails from '../components/StudentsDetails'
+import {connect} from 'react-redux'
+import {addToCart} from '../services/Actions/action'
 
-export default StudentsDetails;
+const mapStateToProps=state=>({
+    // data:state.cardItems
+})
+const mapDispatchToProps=dispatch=>({
+    addToCartHandler:data=>dispatch(addToCart(data))
+
+})
+export default connect(mapStateToProps,mapDispatchToProps)(StudentsDetails)
+// export default Home;

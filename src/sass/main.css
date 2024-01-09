@@ -253,6 +253,10 @@ header {
   height: 100%;
 }
 
+.spectrumImage img {
+  width: 100%;
+}
+
 .spectrumText {
   padding: 24px;
 }
