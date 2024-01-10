@@ -206,7 +206,7 @@ export default function Header() {
                     className="btnSite"
                     to="/contactus"
                   >
-                    Cart <ShoppingBasketOutlinedIcon /> 
+                    Contact 
                   </Link>
                 </li>
               </ul>
